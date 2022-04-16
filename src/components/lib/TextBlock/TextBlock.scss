@@ -1,0 +1,43 @@
+@import '../../../variables';
+
+.text-block{
+    font-size: 16px;
+    color: $parTextClr;
+    padding-bottom: 20px;
+    // border-bottom: 1px solid $bordersClr;
+
+    &__heading{
+
+    }
+
+    &__description{
+        opacity: 0.8;
+
+        &_italic {
+            font-style: italic;
+        }
+    }
+}
+
+.TB-heading{
+    margin-bottom: 20px;
+
+    &__title{
+        text-transform: capitalize;
+        padding-bottom: 10px;
+        font-size: 18px;
+
+        .place{
+            margin-left: 10px;
+            font-weight: 400;
+            font-size: 18px;
+            opacity: 0.8;
+        }
+
+    }
+
+    &__date{
+        opacity: 0.8;
+
+    }
+}

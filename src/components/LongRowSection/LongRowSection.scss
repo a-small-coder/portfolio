@@ -1,0 +1,9 @@
+@import '../../variables';
+
+.content-container{
+
+    &__item:not(:last-child){
+        border-bottom: 1px solid $bordersClr;
+        margin-bottom:20px;
+    }
+}

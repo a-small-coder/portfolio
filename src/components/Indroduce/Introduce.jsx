@@ -1,0 +1,109 @@
+import React from 'react';
+import Title from '../lib/Title/Title';
+
+import './Introduce.scss';
+
+import img from '../../img/introduce.jpg';
+import Button from '../lib/Button/Button';
+import { Link } from 'react-router-dom';
+
+
+
+function Introduce(props) {
+
+    const socials = props.data.contacts.map(el => {
+        if (el.type === "simple") {
+            return (
+                <li key={el.id} className='socials-list__item'>
+                    <p>
+                        <span className="item__title">
+                            {el.title}
+                        </span>
+                        <span className="item__text">
+                            {el.data}
+                        </span>
+                    </p>
+                </li>
+            )
+        }
+        if (el.type == "list") {
+            let icons = null
+            if (el.data.length > 0) {
+                icons = el.data.map(contact => (
+                    <a key={contact.id} href={contact.link} blank="true">
+                        {contact.name}
+                    </a>
+                ))
+            }
+            return (
+                <li key={el.id} className='socials-list__item'>
+                    <p>
+                        <span className="item__title">
+                            {el.title}
+                        </span>
+                        <span className="item__icons">
+                            {icons}
+                        </span>
+                    </p>
+                </li>
+            )
+        }
+        return <></>
+    })
+
+    return (
+        <section className="introduce section">
+            <div className='__container'>
+
+
+                <div className="introduce__row-content">
+                    <div className="introduce__about-me about-me">
+                        <Title
+                            type="heading"
+                            wrapperClass="about-me__title"
+                            heading_lvl={2}
+                        >
+                            {props.data.heading}
+                        </Title>
+
+                        <div className="about-me__descr simple-description__content">
+                            <p>{props.data.description}</p>
+                        </div>
+
+                        <ul className="about-me__socials socials-list">
+                            {socials}
+                        </ul>
+
+                        <div className='about-me__buttons'>
+                            <Button
+                                type="control"
+                                wrapperClass="contact-btn"
+                            >
+                                Связаться
+                            </Button>
+
+                            <a href="https://docs.google.com/document/d/1ozI4ump7weJmn69lqiRoni-AwqHy_tmWNayKlwUfKjI/edit?usp=sharing" blank="true">
+                                <Button
+                                    type="default"
+                                    wrapperClass="resume-btn"
+                                >
+                                    Скачать резюме
+                                </Button>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div className="introduce__image">
+                        <div className="image-introduce">
+                            <img src={img} className="img-responsive" alt="img"></img>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    );
+}
+
+export default Introduce;

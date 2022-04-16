@@ -1,0 +1,33 @@
+@import '../../variables';
+
+.header{
+    width: 100%;
+    padding: 20px 5px;
+    
+    border-bottom: 1px solid $bordersClr;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu{
+
+    }
+
+    &__logo{
+
+    }
+}
+
+.menu{
+
+    &__item{
+        margin: 0px 15px;
+    }
+
+    &__item:last-child{
+        margin: 0;
+    }
+}
