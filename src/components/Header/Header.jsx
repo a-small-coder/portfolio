@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import NavItem from '../lib/NavItem/NavItem';
 import Title from '../lib/Title/Title';
 
@@ -52,13 +53,16 @@ function Header(props) {
         <div className='header'>
             <div className='header__container'>
                 <div className="header__logo">
-                    <Title 
-                        type="heading" 
-                        wrapperClass="simple-description__title"
-                        heading_lvl = {1}
-                    >
-                        Oleg
-                    </Title>
+                    <Link to='/portfolio'>
+                        <Title 
+                            type="heading" 
+                            wrapperClass="header__logo_title"
+                            heading_lvl = {1}
+                        >
+                            Oleg
+                        </Title>
+                    </Link>
+                    
                 </div>
 
                 <div className="header__menu menu">

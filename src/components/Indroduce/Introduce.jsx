@@ -26,12 +26,17 @@ function Introduce(props) {
                 </li>
             )
         }
-        if (el.type == "list") {
+        if (el.type === "list") {
             let icons = null
             if (el.data.length > 0) {
                 icons = el.data.map(contact => (
-                    <a key={contact.id} href={contact.link} blank="true">
-                        {contact.name}
+                    <a 
+                        key={contact.id} 
+                        className={` _icon-${contact.icon}`}
+                        href={contact.link} 
+                        target="_blank" 
+                        rel="noreferrer">
+                        {/* {contact.name} */}
                     </a>
                 ))
             }

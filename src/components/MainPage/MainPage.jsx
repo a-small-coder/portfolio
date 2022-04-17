@@ -5,17 +5,15 @@ import LongRowSection from '../LongRowSection/LongRowSection';
 function MainPage(props) {
 
     const dataSocial = [
-        {id: 1, name: "github", link: "", icon: ""},
-        {id: 2, name: "vk", link: "", icon: ""},
-        {id: 3, name: "telegram", link: "", icon: ""},
-        {id: 4, name: "instagram", link: "", icon: ""},
-        {id: 5, name: "linkedin", link: "", icon: ""}
+        {id: 1, name: "github", link: "https://github.com/a-small-coder", icon: "github"},
+        {id: 2, name: "vk", link: "", icon: "vk"},
+        {id: 3, name: "telegram", link: "", icon: "telegram"},
     ]
     const dataIntro = {
         heading: "Привет, я Дубровин Олег",
         description: "Я начинающий frontend разработчик. В настоящее время я работаю на полставки младшим веб-разработчиком в научно-исследовательском центре в Московском Техническом Университете Связи и Информатики. Я стремлюсь постоянно совершенствоватьcя и улучшать свои навыки в профессиональной сфере.",
         contacts: [
-            {id: 1, title: "Рабочий телефон", data: "+79864553042", type:"simple"},
+            {id: 1, title: "Рабочий телефон", data: "+798500000000", type:"simple"},
             {id: 2, title: "Email", data: "Dubrovin.Oleg.v@mail.ru", type:"simple"},
             {id: 3, title: "Социальные сети", data: dataSocial, type:"list"},
         ]

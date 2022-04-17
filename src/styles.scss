@@ -5,6 +5,91 @@
 
 
 
+@font-face {
+	font-family: "icons";
+	font-display: swap;
+	src: url("./fonts/icomoon.woff") format("woff"), url("./fonts/icomoon.ttf") format("ttf");
+	font-weight: 400;
+	font-style: normal;
+  }
+
+._init .menu-footer__title::before,
+  [class^=_icon-]:before,
+  [class*=" _icon-"]:before {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+  
+[class^=_icon-]:before,
+[class*=" _icon-"]:before {
+	display: block;
+}
+
+._icon-home:before {
+	content: "\e900";
+}
+._icon-phone:before {
+	content: "\e942";
+}
+._icon-location:before {
+	content: "\e947";
+}
+._icon-bubble:before {
+	content: "\e96b";
+}
+._icon-equalizer:before {
+	content: "\e992";
+}
+._icon-cog:before {
+	content: "\e994";
+}
+._icon-eye:before {
+	content: "\e9ce";
+}
+._icon-eye-blocked:before {
+	content: "\e9d1";
+}
+._icon-star-empty:before {
+	content: "\e9d7";
+}
+._icon-star-half:before {
+	content: "\e9d8";
+}
+._icon-star-full:before {
+	content: "\e9d9";
+}
+._icon-plus:before {
+	content: "\ea0a";
+}
+._icon-minus:before {
+	content: "\ea0b";
+}
+._icon-cross:before {
+	content: "\ea0f";
+}
+._icon-checkmark:before {
+	content: "\ea10";
+}
+._icon-instagram:before {
+	content: "\ea92";
+}
+._icon-telegram:before {
+	content: "\ea95";
+}
+._icon-vk:before {
+	content: "\ea98";
+}
+._icon-github:before {
+	content: "\eab0";
+}
+
+
 * {
 padding: 0px;
 margin: 0px;
@@ -154,6 +239,8 @@ body {
     padding: 40px 0;
     border-bottom: 1px solid $bordersClr;
 }
+
+
 // Ограничивающий контейнер ======================================================================================================================================================================================================================
 
 /*
