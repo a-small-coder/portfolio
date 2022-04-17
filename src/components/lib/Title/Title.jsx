@@ -3,45 +3,48 @@ import './Title.scss'
 
 function Title(props) {
     let className = "heading"
-    className = props.wrapperClass != null ?  props.wrapperClass + ` ${className}`: className
-    let title
-    const lvl1 = <h1 className='heading__title'>{props.children}</h1>
-    const lvl2 = <h2 className='heading__title'>{props.children}</h2>
-    const lvl3 = <h3 className='heading__title'>{props.children}</h3>
+    className = props.wrapperClass != null ? props.wrapperClass + ` ${className}` : className
+    let dote = ""
+    if (props.type === 'heading') {
+        dote = ` _dote`
+    }
     switch (props.heading_lvl) {
         case 1:
-            title = lvl1
-            break;
-        
+            return (
+                <div className={className}>
+                    <h1 className={'heading__title' + dote}>
+                        {props.children}
+                    </h1>
+                </div>
+            )
+
         case 2:
-            title = lvl2
-            break;
+            return (
+                <div className={className}>
+                    <h2 className={'heading__title' + dote}>
+                        {props.children}
+                    </h2>
+                </div>
+            )
 
         case 3:
-            title = lvl3
-            break;
-    
+            return (
+                <div className={className}>
+                    <h3 className={'heading__title' + dote}>
+                        {props.children}
+                    </h3>
+                </div>
+            )
+
         default:
-            title = lvl3
-            break;
+            return (
+                <div className={className}>
+                    <h3 className='heading__title'>
+                        {props.children}
+                    </h3>
+                </div>
+            )
     }
-    if (props.type ==='heading'){
-        
-        return (
-            <div className={className}>
-                {title}
-                <span className={`heading__dote _${props.heading_lvl}`}></span>
-            </div>
-        );
-    }
-    else{
-        return (
-            <div className={className}>
-                {title}
-            </div>
-        );
-    }
-    
 }
 
 export default Title;

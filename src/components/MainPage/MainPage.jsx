@@ -1,13 +1,6 @@
-import { VStack } from '@chakra-ui/react';
 import React from 'react';
-import Header from '../Header/Header';
 import Introduce from '../Indroduce/Introduce';
-import Button from '../lib/Button/Button';
-import NavItem from '../lib/NavItem/NavItem';
-import SimpleDescription from '../lib/SimpleDescription/SimpleDescription';
-import TextBlock from '../lib/TextBlock/TextBlock';
 import LongRowSection from '../LongRowSection/LongRowSection';
-import Skills from '../Skills/Skills';
 
 function MainPage(props) {
 
@@ -29,6 +22,7 @@ function MainPage(props) {
     }
 
     const dataSkills = {
+        type: "grid",
         title: "Навыки",
         description: "Меня вдохновляет создание отличных проектов с людьми, которые так же увлечены созданием чего-то потрясающего.",
         sections: [
@@ -56,6 +50,7 @@ function MainPage(props) {
     }
 
     const dataEducation = {
+        type: "column",
         title: "Образование",
         description: "Всю жизнь я был движим нерушимой верой в важность обучения. Я стараюсь узнавать что-то новое каждый день.",
         sections: [
@@ -92,6 +87,7 @@ function MainPage(props) {
     }
 
     const dataExperience = {
+        type: "column",
         title: "Мой опыт",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
         sections: [
@@ -139,7 +135,7 @@ function MainPage(props) {
 
             <Introduce data={dataIntro}/>
 
-            <Skills data={dataSkills}/>
+            <LongRowSection data={dataSkills}/>
 
             <LongRowSection data={dataEducation}/>
 

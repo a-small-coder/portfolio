@@ -25,7 +25,7 @@ function TextBlock(props) {
         <div className={className}>
             <div className="text-block__heading TB-heading">
                 <Title
-                    type="heading"
+                    type="text"
                     wrapperClass="TB-heading__title"
                     heading_lvl={3}
                 >

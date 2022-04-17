@@ -122,7 +122,7 @@ $mobileSmall: em(479.98); // Телефоны S
 // Тип адаптива:
 // 1 = отзывчивость (у контейнера нет брейкпоинтов),
 // 2 = по брейк-поинтам (контейнер меняет свою ширину по брейк-поинтам)
-$responsiveType: 1;
+$responsiveType: 2;
 
 body {
 	// Скролл заблокирован
@@ -187,10 +187,10 @@ body {
 			}
 		}
 		@media (max-width: $pc) {
-			max-width: rem(970);
+			max-width: 970px;
 		}
 		@media (max-width: $tablet) {
-			max-width: rem(750);
+			max-width: 750px;
 		}
 		@media (max-width: $mobile) {
 			max-width: none;

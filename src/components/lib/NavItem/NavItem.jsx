@@ -7,8 +7,16 @@ function NavItem(props) {
     className = props.wrapperClass != null ?  props.wrapperClass + ` ${className}`: className
 
     const link = props.link == null ? "/" : props.link
+
+    const clickHandler = () =>{
+        if(props.onClick != null){
+            props.onClick()
+        }
+        
+    }
+
     return (
-        <div className={className}>
+        <div className={className} onClick={clickHandler}>
             <Link to={link} className='navigation-item__link'>
                 {props.children}
             </Link>

@@ -1,16 +1,15 @@
 import React from 'react';
 import Title from '../lib/Title/Title';
+import BlocksGenerator from './BlocksGenerator';
 
 import zigzag from '../../img/image.png';
 
 import './LongRowSection.scss';
-import TextBlock from '../lib/TextBlock/TextBlock';
+
 
 function LongRowSection(props) {
 
-    const sectionBlocks = props.data.sections.map( section => (
-        <TextBlock key={section.id} data={section} wClass="content-container__item"/>
-    ))
+    const sectionBlockClass = `row-section__content ${props.data.type === 'grid' ? "content-section" : "content-container"}`
 
     return (
         <section className="section">
@@ -38,8 +37,12 @@ function LongRowSection(props) {
 
                     </div>
 
-                    <div className="row-section__content content-container">
-                        {sectionBlocks}
+                    <div 
+                        className={sectionBlockClass} >
+                        <BlocksGenerator
+                            type={props.data.type}
+                            data={props.data}
+                        />
                     </div>
 
                 </div>

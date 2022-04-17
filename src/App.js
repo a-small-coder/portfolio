@@ -1,11 +1,10 @@
 import React from 'react';
-import { Logo } from './Logo';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import MainPage from './components/MainPage/MainPage';
-import NavItem from './components/lib/NavItem/NavItem';
 import Header from './components/Header/Header';
 
 import './styles.scss'
+import NoMatchPage from './components/NoMatchPage/NoMatchPage';
 
 function App() {
   return (
@@ -13,7 +12,8 @@ function App() {
     <div className='wrapper'>
       <Header/>
       <Routes>
-        <Route path='/' element={<MainPage/>}></Route>
+        <Route path='/portfolio' element={<MainPage/>}></Route>
+        <Route path="*" element={<NoMatchPage/>}></Route>
       </Routes>
     </div>
       

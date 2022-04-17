@@ -57,6 +57,13 @@ function Introduce(props) {
 
 
                 <div className="introduce__row-content">
+
+                <div className="introduce__image">
+                        <div className="image-introduce">
+                            <img src={img} className="img-responsive" alt="img"></img>
+                        </div>
+                    </div>
+
                     <div className="introduce__about-me about-me">
                         <Title
                             type="heading"
@@ -75,14 +82,16 @@ function Introduce(props) {
                         </ul>
 
                         <div className='about-me__buttons'>
+                            <Link to='/contacts'>
                             <Button
                                 type="control"
                                 wrapperClass="contact-btn"
                             >
                                 Связаться
                             </Button>
+                            </Link>
 
-                            <a href="https://docs.google.com/document/d/1ozI4ump7weJmn69lqiRoni-AwqHy_tmWNayKlwUfKjI/edit?usp=sharing" blank="true">
+                            <a href="https://docs.google.com/document/d/1ozI4ump7weJmn69lqiRoni-AwqHy_tmWNayKlwUfKjI/edit?usp=sharing" target="_blank" rel="noreferrer">
                                 <Button
                                     type="default"
                                     wrapperClass="resume-btn"
@@ -94,11 +103,7 @@ function Introduce(props) {
 
                     </div>
 
-                    <div className="introduce__image">
-                        <div className="image-introduce">
-                            <img src={img} className="img-responsive" alt="img"></img>
-                        </div>
-                    </div>
+                    
                 </div>
 
             </div>

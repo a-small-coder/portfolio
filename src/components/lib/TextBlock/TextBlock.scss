@@ -4,7 +4,6 @@
     font-size: 16px;
     color: $parTextClr;
     padding-bottom: 20px;
-    // border-bottom: 1px solid $bordersClr;
 
     &__heading{
 
@@ -39,5 +38,20 @@
     &__date{
         opacity: 0.8;
 
+    }
+}
+
+@media (max-width: 991.98px){
+    .TB-heading{
+
+        &__title{
+
+            .place{
+                font-size: 16px;
+                margin-top: 5px;
+                margin-left: 0;
+                display: block;
+            }
+        }
     }
 }
