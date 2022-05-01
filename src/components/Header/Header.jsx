@@ -59,14 +59,14 @@ function Header(props) {
                             wrapperClass="header__logo_title"
                             heading_lvl = {1}
                         >
-                            Oleg
+                            Logo
                         </Title>
                     </Link>
                     
                 </div>
 
                 <div className="header__menu menu">
-                    {menuItems}
+                    {/* {menuItems} */}
                 </div>
 
                 <div className={mobileMenuClass}>
@@ -78,7 +78,7 @@ function Header(props) {
                         </div>  
 
                     <div className={mobileMenuBodyClass}>
-                        {mobilemenuItems}                        
+                        {/* {mobilemenuItems}                         */}
                     </div>
 
                 </div>

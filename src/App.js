@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 
 import './styles.scss'
 import NoMatchPage from './components/NoMatchPage/NoMatchPage';
+import TablePage from './components/TablePage';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
     <div className='wrapper'>
       <Header/>
       <Routes>
-        <Route path='/portfolio' element={<MainPage/>}></Route>
+        {/* <Route path='/portfolio' element={<MainPage/>}></Route> */}
+        <Route path='/table' element={<TablePage/>}></Route>
         <Route path="*" element={<NoMatchPage/>}></Route>
       </Routes>
     </div>

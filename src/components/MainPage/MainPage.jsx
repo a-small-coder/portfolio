@@ -39,11 +39,11 @@ function MainPage(props) {
                 title: "UI\\UX design",
                 content: "Photoshop, Figma, Illustrator, Прототипирование, юзабилити-тестрование" 
             },
-            {
-                id: 4,
-                title: "soft skills",
-                content: "Screaming Frog, Woorank, Raventools, Semrush, Moz, WebCEO, Google Analytics, ChartBeat, CrazyEgg." 
-            },
+            // {
+            //     id: 4,
+            //     title: "soft skills",
+            //     content: "Screaming Frog, Woorank, Raventools, Semrush, Moz, WebCEO, Google Analytics, ChartBeat, CrazyEgg." 
+            // },
         ]
     }
 
@@ -61,25 +61,29 @@ function MainPage(props) {
             },
             {
                 id: 2,
-                title: "Курс верстки HTML5 + CSS3",
-                subtitle: "HTML-academy",
-                date: "Апрель, 2018 - Июль, 2018",
-                content: "Всю жизнь я был движим нерушимой верой в важность обучения. Я стараюсь узнавать что-то новое каждый день." 
+                title: "\"Курс ВЕБ-разработчик - с нуля до результата!\"",
+                subtitle: "beonmax",
+                date: "Август, 2020 - Декабрь, 2020",
+                content: "Программа обучения включает видео уроки по изучению Веб-разработки с нуля. Благодаря практическим заданиям, Вы сможете закрепить полученные знания и создать собственные сайты на практике." 
             },
             {
                 id: 3,
-                title: "Еще один курс",
-                subtitle: "шарага 2.0",
-                date: "Октябрь, 2019 - Февраль, 2020",
-                content: "Всю жизнь я был движим нерушимой верой в важность обучения. Я стараюсь узнавать что-то новое каждый день." 
+                title: "\"Курс JavaScript - полный курс с нуля до результата\"",
+                subtitle: "beonmax",
+                date: "Октябрь, 2019 - Март, 2020",
+                content: "Основная цель курса - практика изучения JavaScript на реальных примерах для frontend-разработчиков. Каждый теоретический блок заканчивается практикой. Создадите реальные проекты в процессе прохождения курса" 
             },
             {
                 id: 4,
-                title: "Точно еще что-то было",
-                subtitle: "Филькина грамота",
-                date: "Февраль, 2020 - Май, 2020",
-                content: "Всю жизнь я был движим нерушимой верой в важность обучения. Я стараюсь узнавать что-то новое каждый день." 
+                title: "16 тренажеров",
+                subtitle: "HTML-academy",
+                date: "Апрель, 2018 - Июль, 2019",
+                content: "Знакомство с веб-разработкой, Знакомство с HTML и CSS, \
+                Знакомство с JavaScript, Погружение в HTML и CSS, Продвинутый HTML и CSS, \
+                Программирование на JavaScript, Динамические эффекты, Сборник: Тонкости CSS..." 
             },
+            
+            
 
         ]
     }
@@ -90,11 +94,25 @@ function MainPage(props) {
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
         sections: [
             {
-                id: 1,
-                title: "Работа просто так",
-                subtitle: "дома",
-                date: "Апрель, 2018 - Январь, 2019",
+                id: 5,
+                title: "Junior frontend",
+                subtitle: "МТУСИ",
+                date: "Январь, 2022 - текущее время",
                 content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." 
+            },
+            {
+                id: 4,
+                title: "Fulstack developer",
+                subtitle: "Один невзлетевший стартап",
+                date: "Октябрь, 2021 - Январь, 2022",
+                content: "Разрабатывался проект инновационной интернет-прощадки для инвесторов и владельцев малого бизнеса. Работал со стеком react + django. " 
+            },
+            {
+                id: 3,
+                title: "trainee frontend",
+                subtitle: "GrandCore",
+                date: "Май, 2021 - Июль, 2021",
+                content: "Open source проект. Приходилось преимущественно верстать страницы сайта, интегрировать верстку в react компоненты. Создал 12 страниц, написал более 5000 строчек кода" 
             },
             {
                 id: 2,
@@ -103,28 +121,7 @@ function MainPage(props) {
                 date: "Апрель, 2019 - Июль, 2020",
                 content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." 
             },
-            {
-                id: 3,
-                title: "trainee frontend",
-                subtitle: "GrandCore",
-                date: "Май, 2021 - Июль, 2021",
-                content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." 
-            },
-            {
-                id: 4,
-                title: "Fulstack developer",
-                subtitle: "Один невзлетевший стартап",
-                date: "Октябрь, 2021 - Январь, 2022",
-                content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." 
-            },
-            {
-                id: 5,
-                title: "Junior frontend",
-                subtitle: "МТУСИ",
-                date: "Январь, 2022 - текущее время",
-                content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." 
-            },
-
+            
         ]
     }
 
