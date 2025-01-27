@@ -87,22 +87,13 @@ function Introduce(props) {
                         </ul>
 
                         <div className='about-me__buttons'>
-                            <Link to='/contacts'>
+                            <a target='_blank' href='https://t.me/DubrovinOlegV'>
                             <Button
                                 type="control"
                                 wrapperClass="contact-btn"
                             >
                                 Связаться
                             </Button>
-                            </Link>
-
-                            <a href="https://docs.google.com/document/d/1ozI4ump7weJmn69lqiRoni-AwqHy_tmWNayKlwUfKjI/edit?usp=sharing" target="_blank" rel="noreferrer">
-                                <Button
-                                    type="default"
-                                    wrapperClass="resume-btn"
-                                >
-                                    Скачать резюме
-                                </Button>
                             </a>
                         </div>
 

@@ -13,8 +13,7 @@ function App() {
     <div className='wrapper'>
       <Header/>
       <Routes>
-        {/* <Route path='/portfolio' element={<MainPage/>}></Route> */}
-        <Route path='/table' element={<TablePage/>}></Route>
+        <Route path='/portfolio' element={<MainPage/>}></Route>
         <Route path="*" element={<NoMatchPage/>}></Route>
       </Routes>
     </div>

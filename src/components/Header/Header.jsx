@@ -24,21 +24,6 @@ function Header(props) {
             title: "Главная",
             link: "/portfolio"
         },
-        {
-            id: 2,
-            title: "Резюме",
-            link: "/resume"
-        },
-        {
-            id: 3,
-            title: "Портфолио",
-            link: "/portfolio"
-        },
-        {
-            id: 4,
-            title: "Контакты",
-            link: "/contacts"
-        },
     ]
 
     const menuItems = data.map( el => (
